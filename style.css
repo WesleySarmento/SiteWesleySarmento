@@ -226,9 +226,11 @@ p{
     align-items: center;
     margin-left: 650px;
     padding-top: 40px;
+    
 
 }
 .social-media ul, li, img{
+
     display: inline;
     justify-content: center;
     align-items: center;
