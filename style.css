@@ -29,7 +29,7 @@ html{
 }
 
 body{
-    display: relative;
+    display: absolute;
     position: initial;
     font-family: "Kode Mono", monospace;
     font-size: 14px;
@@ -48,18 +48,19 @@ body{
 }
 
 
-.perfil{
+.header{
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    background-color: black;
+    padding: 20px;
 
-}
 
-header{
-    margin-top: 47px;
-    margin-left: 42px;
 }
 
 .link-menu{
     font-weight: 400;
-    font-size: 14px;
+    font-size: 18px;
     line-height: 21px;
     text-align: center;
     letter-spacing: 0.875px;
@@ -75,18 +76,39 @@ a {
     -moz-transition: all .3s ease-in-out;
     -o-transition: all .3s ease-in-out;
     -ms-transition: all .3s ease-in-out;
-    transition: all .3s ease-in-out
+    transition: all .3s ease-in-out;
 }
 
 a:hover {
     color: #ff9800;
     text-decoration: none;
-    outline: none
+    outline: none;
+    font-size: 20px;
+    font-weight: 500px;
 }
 
 a:focus {
     outline: 0;
     text-decoration: none
+}
+
+
+.foto-perfil img {
+    margin: 200px 0 -100px 290px;
+    border:1 solid black;
+    display: flex;
+    justify-content: center;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    box-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px rgba(0,0,0,.23);
+}
+
+.caixa-perfil{
+    margin-top: -200px;
+    display: inline-block;
+    margin-left: 600px;
+    width: 600px;
 }
 
 h1, h2,h3,h4,h5,h6{
@@ -103,6 +125,80 @@ h1{
     text-align: center;
     letter-spacing: -.596px
 }
+
+h1 span {
+    display: inline-block;
+    animation: bounce 3s ease;
+  }
+  
+  h1 span:nth-child(2) {
+    animation-delay: 0.2s;
+  }
+  
+  h1 span:nth-child(3) {
+    animation-delay: 0.4s;
+  }
+  
+  h1 span:nth-child(4) {
+    animation-delay: 0.6s;
+  }
+  
+  h1 span:nth-child(5) {
+    animation-delay: 0.8s;
+  }
+  
+  h1 span:nth-child(6) {
+    animation-delay: 1s;
+  }
+  
+  h1 span:nth-child(7) {
+    animation-delay: 1.2s;
+  }
+  
+  h1 span:nth-child(8) {
+    animation-delay: 1.4s;
+  }
+  
+  h1 span:nth-child(9) {
+    animation-delay: 1.6s;
+  }
+  
+  h1 span:nth-child(10) {
+    animation-delay: 1.8s;
+  }
+  
+  h1 span:nth-child(11) {
+    animation-delay: 2s;
+  }
+  
+  h1 span:nth-child(12) {
+    animation-delay: 2.2s;
+  }
+  
+  h1 span:nth-child(13) {
+    animation-delay: 2.4s;
+  }
+  
+  h1 span:nth-child(14) {
+    animation-delay: 2.6s;
+  }
+  h1 span:nth-child(15) {
+    animation-delay: 2.8s;
+  }
+
+  @keyframes bounce {
+    0% {
+      transform: translateY(0);
+    }
+  
+    10% {
+      transform: translateY(-2rem);
+    }
+  
+    20% {
+      transform: translateY(0);
+    }
+  }
 
 h3{
     font-size: 20px;
@@ -121,33 +217,23 @@ p{
     line-height: 1.75em;
     color: #d5d5d5;
     margin: 0 0 10px;
-    margin-top: 47px;
-    margin-bottom: 55px;
-}
-
-.caixa-perfil{
-    display: inline-block;
-    margin-left: 600px;
-    width: 493px;
-}
-
-img {
-    margin: 63px 0 0 203px;
-    border:1 solid black;
-    /* display: inline-block; */
-    margin-left: 350px;
-    width: 200px;
-    position: l;
-    height: 200px;
-    display: inline-block;
-    border-radius: 100px;
-    box-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px rgba(0,0,0,.23);
+    margin-top: 30px;
 }
 
 .social-media{
-    width: 50px;
-    height: 100px;
-    right: 0;
-    left: 0;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    margin-left: 650px;
+    padding-top: 40px;
+
+}
+.social-media ul, li, img{
+    display: inline;
+    justify-content: center;
+    align-items: center;
     text-decoration: none;
+    width: 50px;
+    height: 50px;
+    padding: 10px;
 }
